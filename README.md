@@ -46,6 +46,10 @@ This project answers these questions using SQL-based analytics on a structured P
 ## 4. Data Warehouse Design
 
 The database follows a star schema optimized for analytical workloads.
+## ERD Diagram: Star Schema
+
+![ERD Diagram](81ccac33-e693-48ed-abfe-c548bd2d5ba1.png)
+
 
 ### 4.1 Fact Table
 
