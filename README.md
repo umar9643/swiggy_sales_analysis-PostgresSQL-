@@ -48,8 +48,7 @@ This project answers these questions using SQL-based analytics on a structured P
 The database follows a star schema optimized for analytical workloads.
 ## ERD Diagram: Star Schema
 
-<img src="data:image/png;base64,PASTE_BASE64_HERE" alt="Swiggy ERD Diagram" width="800"/>
-
+https://github.com/umar9643/swiggy_sales_analysis-PostgresSQL-/blob/main/img/Screenshot%202025-12-15%20153510.png
 
 
 ### 4.1 Fact Table
