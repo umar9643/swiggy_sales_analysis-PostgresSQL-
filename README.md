@@ -132,16 +132,8 @@ All analysis logic is written using PostgreSQL-compatible SQL.
 --------------------------------------------------------------------
 
 ## 9. Project Structure
-Swiggy_Sales_Analysis/
-│
-├── README.md
-├── sql/
-│   ├── schema.sql
-│   ├── kpi_queries.sql
-│   └── analysis_queries.sql
-├── scripts/
-│   └── data_validation.sql
-└── .gitignore
+<img width="887" height="432" alt="image" src="https://github.com/user-attachments/assets/f7474bf4-02c9-413b-88d5-bfc82e8de8fc" />
+
 
 --------------------------------------------------------------------
 
