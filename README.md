@@ -132,7 +132,6 @@ All analysis logic is written using PostgreSQL-compatible SQL.
 --------------------------------------------------------------------
 
 ## 9. Project Structure
-
 Swiggy_Sales_Analysis/
 │
 ├── README.md
@@ -175,4 +174,5 @@ B.Sc. Data Analytics
 Skills:
 SQL | PostgreSQL | Data Warehousing | Business Analytics | Data Modeling  
 
-GitHub: Add your repository link here
+[Umar Alam's Profile](https://www.linkedin.com/in/umar-alam-a1b2c3)  
+[GitHub](https://github.com/umar9643) 
