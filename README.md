@@ -48,7 +48,8 @@ This project answers these questions using SQL-based analytics on a structured P
 The database follows a star schema optimized for analytical workloads.
 ## ERD Diagram: Star Schema
 
-![ERD Diagram](81ccac33-e693-48ed-abfe-c548bd2d5ba1.png)
+<img src="data:image/png;base64,PASTE_BASE64_HERE" alt="Swiggy ERD Diagram" width="800"/>
+
 
 
 ### 4.1 Fact Table
