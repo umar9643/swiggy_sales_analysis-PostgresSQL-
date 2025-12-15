@@ -1,89 +1,159 @@
-# 🍽️ **Swiggy Restaurant Sales Analysis**
+Swiggy Restaurant Orders Data Warehouse & Business Analytics
 
-## 📌 Project Overview
+SQL | PostgreSQL | Data Modeling | Business KPIs
 
-This project focuses on analyzing restaurant order and sales data inspired by a food delivery platform (Swiggy-like dataset). The objective is to extract **business-driven insights** around sales performance, customer behavior, pricing trends, and restaurant demand using **SQL-based analytics**.
+Project Overview
 
-The analysis is designed to mirror **real-world analytics workflows**, emphasizing clean data modeling, KPI-driven queries, and insight generation rather than raw data dumping.
+This project presents an end-to-end SQL-based business analytics solution built on a PostgreSQL data warehouse using restaurant order data inspired by a Swiggy-like food delivery platform.
 
----
+The primary goal is to transform raw transactional data into actionable business insights by applying proper data modeling, KPI-driven SQL analysis, and warehouse design principles commonly used in real-world analytics teams.
 
-## 🎯 Business Objectives
+The project emphasizes:
 
-* Analyze overall sales and order performance
-* Identify top-performing restaurants and food categories
-* Understand pricing distribution and demand patterns
-* Track time-based trends (daily, weekly, monthly)
-* Generate KPIs useful for business and operational decision-making
+Analytical thinking
 
----
+Business-focused KPIs
 
-## 🛠️ Tools & Technologies
+Scalable data modeling
 
-* **SQL** (PostgreSQL / MySQL compatible queries)
-* **Database Design** (Fact & Dimension tables)
-* **Excel / Power BI** (for dashboarding & validation)
-* **Git & GitHub** (version control & project documentation)
+Clean, optimized SQL queries
 
----
+rather than raw data storage or visualization-heavy outputs.
 
-## 🗂️ Data Model
+Business Problem Statement
 
-The project follows a **star schema** approach:
+Food delivery platforms generate large volumes of transactional data. Business teams need structured insights to answer questions such as:
 
-### Fact Table
+Which cities and states generate the most revenue?
 
-* `fact_restaurant_orders`
+Which restaurants and food categories drive demand?
 
-  * order_id
-  * restaurant_id
-  * category_id
-  * dish_id
-  * location_id
-  * date_id
-  * price_inr
-  * ratings
+What is the average order value and customer rating behavior?
 
-### Dimension Tables
+Which dishes are most frequently ordered?
 
-* `dim_restaurant`
-* `dim_category`
-* `dim_dish`
-* `dim_location`
-* `dim_date`
+This project addresses these questions using PostgreSQL analytics on a structured data warehouse.
 
-This structure enables efficient analytical queries and scalable reporting.
+Tools & Technologies Used
 
----
+PostgreSQL – core analytics and querying
 
-## 📊 Key KPIs & Analysis
+SQL – joins, aggregations, window functions, KPI calculations
 
-* Total Orders & Total Revenue
-* Average Order Value (AOV)
-* Average Dish Price
-* Orders by Restaurant, Category & Location
-* Rating-based Performance Analysis
-* Price Range Bucketing (₹100–₹200, ₹200–₹300, etc.)
-* Time-based Trends (Day, Week, Month, Quarter)
+Data Warehousing Concepts – fact & dimension tables (star schema)
 
-All KPIs are derived using optimized SQL queries.
+Excel (limited use) – data validation and sanity checks
 
----
+Git & GitHub – version control and documentation
 
-## 🔍 Sample Insights
+Data Warehouse Design
 
-* Identified high-revenue restaurants contributing the majority of sales
-* Discovered price ranges with maximum order volume
-* Analyzed category-wise demand and customer preferences
-* Observed time-based order spikes during specific periods
+The database is designed using a star schema to support efficient analytical queries.
 
-> These insights can help improve pricing strategies, restaurant onboarding decisions, and promotional planning.
+Fact Table
 
----
+fact_restaurant_orders
 
-## 📁 Project Structure
+order_id
 
-```
+restaurant_id
+
+category_id
+
+dish_id
+
+location_id
+
+date_id
+
+order_amount_inr
+
+rating
+
+Dimension Tables
+
+dim_restaurant
+
+dim_category
+
+dim_dish
+
+dim_location
+
+dim_date
+
+This structure enables:
+
+Fast aggregations
+
+Clear business metrics
+
+Scalable reporting as data volume grows
+
+Data Volume
+
+197,430+ restaurant orders analyzed
+
+Multiple cities, states, restaurants, categories, and dishes
+
+Large enough to simulate real-world production analytics
+
+Key Business KPIs Derived
+
+Total Revenue: ₹53.01 Million
+
+Total Orders: 197,430+
+
+Average Order Value (AOV): ₹268.51
+
+Average Customer Rating: 4.34
+
+These KPIs were calculated directly using SQL aggregation and analytical queries in PostgreSQL.
+
+Core Business Insights
+Location-Based Insights
+
+Bengaluru recorded the highest number of orders (20,077 orders)
+
+Delhi generated the highest revenue (₹2.83M)
+
+Gujarat closely followed with ₹2.82M revenue
+
+Restaurant Performance
+
+McDonald’s emerged as the top restaurant by order volume (13,530 orders)
+
+KFC ranked second with 12,961 orders
+
+Category & Dish Analysis
+
+The Recommended category had the highest demand (24,100 orders)
+
+Choco Lava Cake was the most ordered dish (303 orders)
+
+Customer Behavior
+
+Majority of orders fall within mid-range pricing buckets, driving higher AOV
+
+High average ratings indicate strong customer satisfaction across top-performing restaurants
+
+SQL Analysis Performed
+
+Revenue and order aggregation
+
+Average order value calculations
+
+Ranking top restaurants, categories, and dishes
+
+City and state-wise performance analysis
+
+Rating-based performance evaluation
+
+Time-based trend analysis using date dimensions
+
+All analysis logic is written using PostgreSQL-compatible SQL.
+
+Project Structure
 Swiggy_Sales_Analysis/
 │
 ├── README.md
@@ -91,38 +161,40 @@ Swiggy_Sales_Analysis/
 │   ├── schema.sql
 │   ├── kpi_queries.sql
 │   └── analysis_queries.sql
-├── dashboards/
-│   └── powerbi_dashboard.pbix
 ├── scripts/
 │   └── data_validation.sql
 └── .gitignore
-```
 
----
+Data Availability Notice
 
-## 🚫 Data Availability Notice
+Raw datasets are intentionally excluded from this repository to:
 
-> Raw datasets are intentionally **excluded** from this repository to maintain data privacy and file size limits.
+Maintain data privacy
 
-All analysis logic, SQL queries, and KPIs are fully documented and reproducible with any compatible dataset following the same schema.
+Avoid large file uploads
 
----
+Follow best GitHub and analytics practices
 
-## ✅ Key Takeaways
+All SQL logic and schema design are fully reusable with any dataset following the same structure.
 
-* Demonstrates strong SQL querying and data modeling skills
-* Focuses on business-relevant KPIs rather than raw outputs
-* Structured like a real-world analytics project
-* Designed for recruiter review and portfolio presentation
+Key Learnings & Outcomes
 
----
+Designed a scalable PostgreSQL data warehouse
 
-## 👤 Author
+Translated raw order data into business-ready KPIs
 
-**Umar Alam**
+Strengthened SQL skills for analytical problem-solving
+
+Applied real-world data modeling concepts used in analytics roles
+
+Built a recruiter-friendly analytics portfolio project
+
+Author
+
+Umar Alam
 B.Sc. Data Analytics
-Skills: SQL | PostgreSQL | Data Modeling | Power BI | Business Analytics
 
----
+Skills:
+SQL | PostgreSQL | Data Warehousing | Business Analytics | Data Modeling
 
-⭐ If you find this project insightful, feel free to explore the queries and analysis logic inside the repository.
+GitHub: (add your repo link here)
